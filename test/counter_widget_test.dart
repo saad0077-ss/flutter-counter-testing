@@ -23,7 +23,7 @@ void main(){
 
         await tester.pump();
 
-        expect(find.text('Counter: 1'), findsOneWidget);
+        expect(find.text('Count: 1'), findsOneWidget);
       });
 
       testWidgets('Decrement button should decrease counter', (tester) async {
@@ -35,7 +35,7 @@ void main(){
 
         await tester.pump();
 
-        expect(find.text('Count : -1'), findsOneWidget);
+        expect(find.text('Count: -1'), findsOneWidget);
       });
   });
 }
